@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Agent | Premium AI Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="mesh-gradient"></div>
+    
+    <main class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <div class="icon-circle">
+                    <i class="ph-fill ph-sparkle"></i>
+                </div>
+                <h1>Hello Agent</h1>
+            </div>
+            <div class="status">
+                <span class="status-dot"></span>
+                Ready
+            </div>
+        </header>
+
+        <section class="chat-window" id="chatWindow">
+            <div class="welcome-message">
+                <i class="ph ph-robot large-icon"></i>
+                <h2>How can I help you today?</h2>
+                <p>Experience the next generation of AI assistance.</p>
+            </div>
+            <!-- Messages will be injected here -->
+        </section>
+
+        <footer class="input-area">
+            <form id="chatForm" class="glass-input">
+                <input type="text" id="userInput" placeholder="Ask anything..." autocomplete="off">
+                <button type="submit" id="sendBtn">
+                    <i class="ph-bold ph-paper-plane-right"></i>
+                </button>
+            </form>
+            <p class="disclaimer">Powered by Gemini & Google ADK</p>
+        </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

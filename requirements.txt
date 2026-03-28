@@ -1,0 +1,5 @@
+google-adk
+Flask
+python-dotenv
+fastmcp
+
